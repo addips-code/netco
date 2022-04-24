@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+section .img_box{
+    position: relative;
+    width: 52%;
+    height: 100%;
+}
+
+section .img_box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, rgba(233, 30, 98, 0.293), #03a8f46b);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .img_box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .content_box{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content_box .form_box{
+    width: 50%;
+
+}
+
+section .content_box .form_box h2{
+    color: #607d8b;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #36c036;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .content_box .form_box .input_box{
+    margin-bottom: 20px;
+}
+
+section .content_box .form_box .input_box span{
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section .content_box .form_box .input_box input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000;
+    background: transparent;
+    border-radius: 30px ;
+}
+
+section .content_box .form_box .input_box input[type="submit"]{
+    background: #36c036;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor:  pointer;
+    transition: .3s ease-out;
+}
+
+section .content_box .form_box .input_box input[type="submit"]:hover{
+    background: #50a550;
+}
+
+section .content_box .form_box .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-size: 14px;
+}
+
+section .content_box .form_box p{
+    color: #607d8b;
+}
+
+@media(max-width: 768px) {
+    section .img_box{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+
+    section .content_box{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    section .content_box .form_box{
+        width: 100%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 50px;
+    }
+}
+
+
+
+
+
+
+
+
