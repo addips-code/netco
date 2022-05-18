@@ -6,7 +6,7 @@ const Login = () => {
             <img className="h-full object-cover" src="/img/micah-williams-lmFJOx7hPc4-unsplash.jpeg"/>
         </div>
         
-        <div className="mx-auto flex-1 md:w-[50%]  my-auto h-full space-y-8">
+        <div className=" mt-20  mx-auto flex-1 md:w-[50%]  md:my-auto h-full space-y-8">
             <h1 className="text-center text-3xl">Login to your portal</h1>
             <form className="flex p-2 flex-col space-y-6">
                 <label className="px-4 ">
